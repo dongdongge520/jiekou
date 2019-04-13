@@ -1,6 +1,7 @@
 import os
 
-def get_cwd():
-    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def data_dir(data=None,fileName=None):
+    '''查找文件路径'''
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),data,fileName)
 
-#print(get_cwd())
+print(data_dir('data','data.xlsx'))

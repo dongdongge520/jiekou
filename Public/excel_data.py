@@ -1,13 +1,13 @@
 class ExcelVariable:
 
-    URL = 0
+    url = 0
     headers = 1
     data = 2
     Expect = 3
     Result = 4
 
 def getUrl():
-    return ExcelVariable.URL
+    return ExcelVariable.url
 
 def getHeaders():
     return ExcelVariable.headers

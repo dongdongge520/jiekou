@@ -38,6 +38,6 @@ class OperationExcel:
         '''获取Result'''
         return self.get_row_col(row,getResult())
 
-operation = OperationExcel()
-print(operation.getUrl(1))
+# operation = OperationExcel()
+# print(operation.getHeaders(1),type(operation.getHeaders(1)))
 

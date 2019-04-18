@@ -1,7 +1,7 @@
 import logging
 import time
 import os
-from Public.getcwd import get_cwd
+from Public.getcwd import data_dir
 
 class MyLog():
     def __init__(self,logger):
@@ -17,7 +17,7 @@ class MyLog():
 
         #创建日志名称
         rq=time.strftime('%Y%m%d%H%M',time.localtime(time.time()))
-        path=get_cwd()
+        path=os.path.dirname(os.path.dirname(__file__))
         log_path=os.path.join(path,'Log/')
         log_name=log_path+rq+'.log'
 
